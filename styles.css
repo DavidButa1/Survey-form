@@ -1,0 +1,45 @@
+body {
+    background-image: url(https://www.marketplace.org/wp-content/uploads/2023/04/USdollar.jpg?fit=2800%2C1866);
+    font-family: sans-serif;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+form{
+    min-width:300px;
+    max-width:500px;
+    background-color: rgba(105,101,100,0.5);
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius:25px;
+    text-align: left;
+}
+label{
+    display: block;
+}
+fieldset{
+    border:0;
+    border-bottom:3px solid #575757;
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: auto;
+    font-size: 1.1rem;
+    background-color: #575757;
+    border-color: white;
+    min-width: 300px;
+}
+.mijloc{
+    text-align:center;
+}
+input, textarea{
+    margin: 5px;
+    width:100%;
+}
+.inline{
+    display:inline;
+}

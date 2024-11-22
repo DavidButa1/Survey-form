@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formular pentru solicitarea banilor</h1>
+    <p id="description">Completeaza formularul pentru a solicita bani</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Introduce-ti Numele: <input id="name" type="text" required placeholder="ex: Andrei Popa Daniel"></label>
+            <label id="email-label" for="email">Introduce-ti Email-ul: <input id="email" type="email" required placeholder="ex: abc123@gmail.com"></label>
+            <label id="number-label" for="number">Introduce-ti Varsta<input id="number" type="number" min="14" max="120" placeholder="ex: 23"></label>
+        </fieldset>
+        <fieldset>
+            <label> Motivul solicitarii
+            <select  id="dropdown">
+                <option value="">(alege o optiune)</option>
+                <option value="1">datorie de platit</option>
+                <option value="2">nevoie de bani</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend class="mijloc">Alege planul de plata</legend>
+            <label><input type="radio" name="optiune" value="50" class="inline"> 50lei/luna</label>
+            <label><input type="radio" name="optiune" value="100" class="inline"> 100lei/luna</label>
+            <label><input type="radio" name="optiune" value="alta" class="inline"> Alta varianta <textarea rows="1" cols="60"placeholder="Scrie aici daca ai selectat alta varianta"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <legend class="mijloc">Ce asteptari doresti sa ai de la noi?</legend>
+            <label><input type="checkbox" value="fb" class="inline"> Viteza de raspundere mai mare</label>
+            <label><input type="checkbox" value="fb" class="inline"> Angajati mai implicati</label>
+            <label><input type="checkbox" value="fb" class="inline"> Accesibilitate marita</label>
+            <label><input type="checkbox" value="fb" class="inline"> Planuri de plata mai mari</label>
+            <label> Adauga alte sugestii (optional)
+                <textarea></textarea>
+            </label>
+        </fieldset>
+        <label><input type="checkbox" class="inline"> Accept termenii si conditiile</label>
+        <label><input type="submit" id="submit"></label>
+    </form>
+</body>
+</html>
